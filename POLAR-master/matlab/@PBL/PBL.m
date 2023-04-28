@@ -43,8 +43,6 @@ classdef PBL < handle
             obj.settings = settings;
             obj.algSetup;
 
-            disp(obj.settings.feedback.types)
-
             % do not allow feedback types 1 and 4 together
             if any(obj.settings.feedback.types == 1)
                 if any(obj.settings.feedback.types == 4)
